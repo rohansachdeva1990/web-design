@@ -1,0 +1,14 @@
+p {
+  /* trbl */
+  /* padding: 10px 20px 10px 20px; */
+
+  /* Same as above */
+  padding: 10px 20px;
+  border: 2px solid gold;
+}
+
+/* Margin */
+/* p {
+  margin: 20px;
+  padding: 0;
+} */

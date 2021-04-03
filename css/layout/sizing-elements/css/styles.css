@@ -1,0 +1,57 @@
+/* By default we use content-box, so padding and border are not taken into account. Here size will be 160 x 160  */
+/* .box {
+  width: 100px;
+  height: 100px;
+  background-color: gold;
+  padding: 20px;
+  border: 10px solid orange;
+  margin: 50px;
+} */
+
+/* Using box-sizing, the padding and border are considered in the size calculation here it will be 100 x 100 */
+/* .box {
+  width: 100px;
+  height: 100px;
+  background-color: gold;
+  padding: 20px;
+  border: 10px solid orange;
+  box-sizing: border-box;
+}
+ */
+
+/* Psuedo selectors are not automatically assingned border-box property */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 10px;
+}
+
+.box::before {
+  content: 'Hello';
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: gold;
+  padding: 20px;
+  border: 10px solid orange;
+  margin-bottom: 20px;
+}
+
+.spanned-box::before {
+  content: 'Hello';
+}
+
+.spanned-box {
+  width: 100px;
+  height: 100px;
+  background-color: gold;
+  padding: 20px;
+  border: 10px solid orange;
+  display: inline-block;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vh & Vw Units</title>
+    <style>
+      /* CSS Reset */
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      /* We want header to take entire screen */
+      header {
+        background: #333 url("https://source.unsplash.com/daily") no-repeat
+          center center/cover;
+        color: #fff;
+        /* This doesn't work because body is still occupying the max height as header is */
+        /* height: 100%; */
+        height: 100vh;
+        text-align: center;
+        /* width: 50vw; */
+        padding: 2rem;
+        padding-top: 15rem;
+      }
+
+      header h1 {
+        /* 16px is default root size so, it will be 16 x 3  */
+        font-size: 3rem;
+      }
+
+      header p {
+        margin: 1rem 0;
+      }
+
+      .btn {
+        display: inline-block;
+        text-decoration: none;
+        background: #f4f4f4;
+        color: #333;
+        padding: 0.75rem 2rem;
+      }
+
+      section {
+        padding: 2rem;
+      }
+
+      /* Means when the view port is 450px or less, below style will kick in */
+      @media (max-height: 450px) {
+        header {
+          padding-top: 5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to Our Website</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga ipsum
+        consequatur harum, est molestiae fugit?
+      </p>
+      <a href="#" class="btn">Find Out More</a>
+    </header>
+    <section>
+      <h3>About Our Company</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum id quod
+        eaque. Atque illo, doloribus quia unde natus facere praesentium quidem
+        quibusdam nobis dignissimos suscipit obcaecati. Animi placeat fuga
+        officia beatae ipsa exercitationem molestias soluta iste voluptates.
+        Deleniti cupiditate, velit molestias quia vero officiis enim
+        reprehenderit dicta, maxime repellat cumque.
+      </p>
+    </section>
+  </body>
+</html>

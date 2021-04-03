@@ -1,0 +1,28 @@
+/* Element Selector */
+body {
+  margin: 10px;
+}
+/* 
+.first-letter {
+  font-size: 140%;
+  font-weight: bold;
+} */
+
+p::first-letter {
+  font-size: 140%;
+  font-weight: bold;
+}
+
+p::first-line {
+  font-weight: bold;
+}
+
+::selection {
+  background-color: pink;
+}
+
+/* Every paragraph will have this content at the end */
+p::after {
+  content: '...';
+  display: block;
+}

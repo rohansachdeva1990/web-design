@@ -1,0 +1,63 @@
+html {
+  /* A cool trick to calculate size of html elements
+    so, it will be 62.5 % of 16 px which is 10 px
+  */
+  font-size: 62.5%;
+}
+
+body {
+  margin: 10px;
+  /* width: 300px; by default 100*/
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: gold;
+}
+
+.box-perc {
+  /* box-perc: 150px  */
+  width: 50%;
+  height: 100px;
+  background-color: gold;
+  margin-bottom: 20px;
+}
+
+.box-em {
+  /* 
+  box-em inherited the default property from body
+  but, body doesn't has it so in turn body inherited the default property from the browser which is 16px
+  10 x font size of the current element = 160px */
+  width: 10em;
+  height: 100px;
+  background-color: gold;
+  margin-bottom: 20px;
+}
+
+.box-rem {
+  /* 
+  10 x font size of the root element
+  
+  now we can assume its 10px because of the cool trick we did in html css selector
+  */
+  width: 15rem;
+  height: 100px;
+  background-color: gold;
+  margin-bottom: 20px;
+}
+
+.box-viewprt {
+  width: 50%;
+  height: 50vh;
+  background-color: gold;
+  margin-bottom: 20px;
+}
+
+.box-final {
+  width: 15rem;
+  height: 100vh;
+  background-color: gold;
+  border-top: 3px solid orange;
+  margin-bottom: 20px;
+}

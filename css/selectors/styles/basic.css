@@ -1,0 +1,20 @@
+/* Element Selector */
+body {
+  margin: 10px;
+}
+/* Id Selector */
+#products {
+}
+
+/* Class Selector */
+.product {
+}
+
+/* Attribute Selectors */
+/* a[href="https://google.com"] { */
+/* Looking for google word in the href value */
+/* a[href*='google'] { */
+/* Starts with https and end with .com  */
+a[href^='https'][href$='.com'] {
+  color: orange;
+}

@@ -1,0 +1,14 @@
+body {
+  margin: 10px;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  /* background-color: darkblue;
+  background-color: rgba(105, 142, 179, 0.5);*/
+  /* background-color: #44cadb; Recommended */
+  /* background-color: hsl(187, 87%, 28%); */
+  /* background-color: hsla(187, 87%, 28%, 0.5); */
+  background-color: hsla(53deg 93% 28%);
+}

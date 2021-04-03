@@ -1,0 +1,24 @@
+/* Element Selector */
+body {
+  margin: 10px;
+}
+
+/* All descandants Selector */
+/* #products p {
+  color: orange;
+} */
+
+/* Direct descendant Selectors */
+/* #products > p {
+  color: orange;
+} */
+
+/* Direct Sibling Selector */
+/* #products + p {
+  color: orange;
+} */
+
+/* General siblings: all siblings of products*/
+#products ~ p {
+  color: orange;
+}

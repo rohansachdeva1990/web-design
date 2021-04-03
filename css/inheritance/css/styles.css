@@ -1,0 +1,16 @@
+body {
+  margin: 10px;
+}
+
+p {
+  color: dodgerblue;
+  border: 1px solid black;
+}
+
+/* To disable highlighting */
+strong {
+  /* Override color from p to initial value of color set for strong */
+  color: initial;
+  /* Inherit from p */
+  border: inherit;
+}

@@ -1,0 +1,44 @@
+body {
+  margin: 10px;
+  height: 200vh;
+}
+
+.boxes {
+  border: 3px solid lightgrey;
+  position: relative;
+}
+
+.box {
+  width: 5rem;
+  height: 5rem;
+}
+
+.box-one {
+  background: gold;
+}
+
+.box-two {
+  background: tomato;
+  /* Relative */
+  /* position: relative;
+  left: 4rem;
+  bottom: 4rem;
+  z-index: 1; */
+
+  /* This box is on different layer of the page  */
+  /* position: absolute;
+  right: 0;
+  bottom: 0; */
+
+  /* Used for navbars: it is relative to the viewport */
+  position: fixed;
+  width: auto;
+  top: 0;
+  left: 2rem;
+  right: 2rem;
+  z-index: 99999;
+}
+
+.box-three {
+  background: dodgerblue;
+}

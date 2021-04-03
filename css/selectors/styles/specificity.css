@@ -1,0 +1,33 @@
+body {
+  margin: 10px;
+}
+
+h1 {
+  /* color: dodgerblue !important; to enforce */
+  color: dodgerblue;
+}
+
+.highlight {
+  color: deeppink;
+}
+
+#products {
+  color: green;
+}
+
+#products {
+  color: brown;
+}
+
+.highlight#products {
+  color: dodgerblue;
+}
+
+h1#products {
+  color: black;
+}
+
+/* class 1, id 1 and element 0 */
+.featured #products {
+  color: green;
+}

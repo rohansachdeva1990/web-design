@@ -1,0 +1,22 @@
+body {
+  margin: 10px;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  /* background: linear-gradient(to right, dodgerblue, yellow); */
+  /* background: linear-gradient(to bottom right, dodgerblue, yellow); */
+  /* background: linear-gradient(45deg, dodgerblue, yellow); */
+  /* background: linear-gradient(45deg, dodgerblue, yellow 30%); */
+  /* background: linear-gradient(45deg, dodgerblue, yellow 30%, tomato); */
+  /* background: radial-gradient(circle, white, dodgerblue); */
+  /* background: radial-gradient(circle at top left, white, dodgerblue); */
+
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+}
