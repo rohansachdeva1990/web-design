@@ -1,5 +1,7 @@
 # Web Design Playground
 
+Everything essentials for web/webapp design
+
 ## <a name='toc'>Table of Contents</a>
 
 1. [HTML](html/)
